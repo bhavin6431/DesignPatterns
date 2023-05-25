@@ -3,7 +3,6 @@ package org.hariom.designpatterns.abstractfactory;
 import org.hariom.designpatterns.factory.Shape;
 
 public class RoundedShapeFactory extends AbstractFactory {
-	@Override
 	public Shape getShape(String shapeType) {
 		if (shapeType.equalsIgnoreCase("RECTANGLE")) {
 			return new RoundedRectangle();
